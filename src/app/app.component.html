@@ -1,0 +1,11 @@
+<h1>Routing App</h1>
+
+<div>
+  <a routerLink="home">Home</a> |
+  <a routerLink="about">About</a> |
+  <a routerLink="kefel" [queryParams]="{sizenum: 3}">Kefel(3*3)</a> |
+  <a routerLink="kefel" [queryParams]="{sizenum: 5}">Kefel(5*5)</a> |
+  <a routerLink="kefel" [queryParams]="{sizenum: 10}">Kefel(10*10)</a>
+</div>
+<button (click)="goToAbout()">Go to About</button>
+<router-outlet></router-outlet>
